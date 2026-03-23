@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color: dimgray;
+}
+h1{
+    color: white;
+}
+h2{
+    color:firebrick;
+}
+a{
+    color: white;
+    font-size: 18px;
+    text-align: right;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+    background-color: rgb(224, 223, 223);
+    font-family:"Google Sans", Arial, sans-serif;
+    text-align: justify;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    
+}
+h1 {
+    color:rgb(66, 116, 20);
+    font-size: 2.3em;
+}
+h1#principal {
+    text-align: center;
+    font-size: 3em;
+}
+h2 {
+    color:rgb(164, 113, 18)
+
+}
+.destaque {
+    background-color:rgb(187, 195, 209);
+    padding: 6px;
+    border-radius: 15px;
+}
+p {
+    font-size: 1.4em;
+}

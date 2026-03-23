@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em diversos dispositivos</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Imagens preparadas para tamanhos de tela diferentes ou para o aumento do tamanho da tela do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível" type="image/png">
+    </picture>
+    <hr>
+    <h1>Áudios em HTML5</h1>
+    <audio preload="metadata" src="audios/Gózalo - Cumbia Deli.mp3" controls></audio> 
+    <p>Caso prefira, pode ouvir o áudio em uma aba separada <a href="audios/Gózalo - Cumbia Deli.mp3" target="_blank">aqui</a>.</p>
+</body>
+</html>

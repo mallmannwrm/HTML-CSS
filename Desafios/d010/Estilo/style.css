@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap);
+@font-face {
+    font-family:"Android";
+    src: url(/Arquivos/fontes/idroid.otf);
+}
+
+            /* VARIÁVEIS */
+
+:root {
+    /* COR */
+    --corFundo: #42A858;
+    --corLinks: #a8424e;
+    --corFundoVermelho: #a8424ec4;
+    --corFundoVerdeEscuro: #43694b;
+    --corFundoVerdeClaro: #8EDF9E;
+    --corRodape: #533C3F;
+
+    /* FONTE */
+    --fonte_padrao: "Cascadia Mono", Arial, sans-serif;
+    --fonte_destaque: "Android", Arial, sans-serif;
+}
+
+            /* ESTRUTURA */
+
+header {
+    background-color: var(--corFundoVerdeEscuro);
+    color: white;
+    min-height: 150px;
+}
+body {
+    background-color: var(--corFundo);
+    text-align: justify;
+    margin: auto;
+}
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+aside {
+    background-color: var(--corFundoVerdeClaro);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.150);
+}
+aside h3 {
+    background-color: var(--corFundoVerdeEscuro);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+ul {
+    columns: 2;
+}
+li {
+    padding-right: 15px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--corRodape);
+    color: white;
+    font-size: 0.6em;
+}
+
+            /* MÍDIA */
+
+iframe {
+    background-color: var(--corFundoVerdeEscuro);
+    padding: 30px;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9.6;
+    box-sizing: border-box; 
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.150);
+}
+img {
+    width: 100%;
+}
+img#Bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+            /* MENU E LINKS */
+
+nav {
+    padding: 0px 20px 10px 0px;
+    background-color: var(--corFundoVerdeEscuro);
+    margin: 0px;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+nav > a:hover {
+    background-color:var(--corFundoVermelho);
+    padding: 10px 20px 10px 20px;
+}
+a {
+    color: var(--corLinks);
+    font-family: var(--fonte_padrao);
+}
+a.externo::after {
+    content: "\1F517";
+}
+a#a1 {
+    border-radius: 10px 0px 0px 0px;
+}
+a#a4 {
+    border-radius: 0px 10px 0px 0px;
+}
+footer a {
+    color: #E35868;
+}
+
+            /* TEXTO */
+
+header > h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    max-width: 500px;
+    padding: 0px 10px 30px 10px;
+    margin: auto;
+}
+header > h1 {
+    margin: 0px;
+    padding: 30px 10px 30px 10px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+footer > p {
+    margin: 0;
+}
+h1, h2 {
+    font-family: var(--fonte_padrao);
+    text-align: center;
+    margin: 0px;
+}
+.Subtitulo{
+    background-color: var(--corFundoVermelho);
+    padding: 5px;
+    font-family: var(--fonte_destaque);
+}
+strong, li, abbr, h3, p {
+    font-family: var(--fonte_padrao);
+    margin: 0px;
+}
+p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+            /* AUXÍLIO DO GEMINI IA */
+            /* REGRAS PARA TELAS PEQUENAS (CELULARES) */
+
+@media (max-width: 600px) {
+    
+    nav > a {
+        display: block; /* A mágica acontece aqui: cada link passa a ocupar a linha inteira */
+        padding: 15px;  /* Aumentamos o padding para ficar mais fácil de clicar com o dedo */
+        margin-bottom: 5px; /* Dá um espacinho entre um botão e outro */
+        border-radius: 10px !important; /* Arredonda todos os cantos dos botões no celular */
+    }
+
+    /* Removemos aquele estilo específico dos cantos a1 e a4 quando está no celular, 
+       pois agora eles são blocos empilhados */
+    a#a1, a#a4 {
+        border-radius: 10px; 
+    }
+}
