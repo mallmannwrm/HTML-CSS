@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .conteiner {
+            display: flex;
+            background-color: rgb(238, 71, 0);
+
+            flex-flow: row nowrap;
+        }
+        .item {
+            flex-basis: 200px;
+
+            color: black;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+        #cxA {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #cxB {
+            flex-grow: 5;
+            flex-shrink: 9;
+        }
+        #cxC {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA"> A </div>
+        <div class="item" id="cxB"> B </div>
+        <div class="item" id="cxC"> C </div>
+    </div>
+</body>
+</html>
