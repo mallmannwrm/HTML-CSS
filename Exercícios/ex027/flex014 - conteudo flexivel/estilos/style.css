@@ -40,6 +40,9 @@ article > div.media > {
 iframe {
     width: 480px;
 }
+img {
+    width: 480px;
+}
 div.media {
     margin: auto;
 }
