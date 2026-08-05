@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+div.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+}
+.caixa1 {
+    grid-area: 1 / 1 / 2 / 5;
+}
+.caixa2 {
+    grid-area: 2 / 1 / 4 / 3;
+}
+.caixa3 {
+    grid-area: 2 / 3 / 4 / 5;
+}
